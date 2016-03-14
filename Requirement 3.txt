@@ -1,0 +1,16 @@
+1)
+Non functional tests:
+	Stress, performance or load testing, spammed the enter key for 30 minutes, nothing special happened.
+	Scalability or maintainability testing, could say that the program is fixed in how many rows, columns and bombs there are.
+
+2)
+
+3)Identify at project level the metrics that you need to improve:
+
+The code is not commented at all, the only comments in the code are code parts that are out commented. So all methods and other necessary parts of the code have to be commented. After the code was commented, the kiviat graph looked way better for the comment section as seen in the attached file. Taking the minesweeper class as an example, all methods where commented but in the gameContinue method also the if sentences where commented to give clarification for what they did.
+
+Average Statements per method was way to high and we found out that the worst part of this came from the Ranking class and more specifically the sort method in this class. So we basically changed the whole sort method to using the Collections.sort() method and Comparator. We also made a new class called ??????????? to save the top 5 in the ranking in. 
+
+Average Depth was a little bit high, but was also fixed after the change in the Ranking class.
+
+The most complex method was the gameContinue method, but there was nothing you could do in this method without changing the whole program because it had to call on other methods in other files. But in the other files you could minimise the complexity, with for example the sort method.The sort method was changed and that minimised the complexity by a lot.
